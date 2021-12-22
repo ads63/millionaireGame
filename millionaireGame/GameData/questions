@@ -1,0 +1,479 @@
+{
+"levels": [
+{
+    "level":1,
+    "weight": 100,
+    "is_proofed": false
+},
+{
+    "level":2,
+    "weight": 200,
+    "is_proofed": false
+},
+{
+    "level":3,
+    "weight": 300,
+    "is_proofed": false
+},
+{
+    "level":4,
+    "weight": 500,
+    "is_proofed": false
+},
+{
+    "level":5,
+    "weight": 1000,
+    "is_proofed": true
+},
+{
+    "level":6,
+    "weight": 2000,
+    "is_proofed": false
+},
+{
+    "level":7,
+    "weight": 4000,
+    "is_proofed": false
+},
+{
+    "level":8,
+    "weight": 8000,
+    "is_proofed": false
+},
+{
+    "level":9,
+    "weight": 16000,
+    "is_proofed": false
+},
+{
+    "level":10,
+    "weight": 32000,
+    "is_proofed": true
+},
+{
+    "level":11,
+    "weight": 64000,
+    "is_proofed": false
+},
+{
+    "level":12,
+    "weight": 125000,
+    "is_proofed": false
+},
+{
+    "level":13,
+    "weight": 250000,
+    "is_proofed": false
+},
+{
+    "level":14,
+    "weight": 500000,
+    "is_proofed": false
+},
+{
+    "level":15,
+    "weight": 1000000,
+    "is_proofed": true
+}
+]
+"questions": [
+{"id": 1,
+"question": "Какое насекомое вызвало короткое замыкание в ранней версии вычислительной машины, тем самым породив термин «компьютерный баг» («баг» в переводе с англ. «насекомое»)?",
+ "level": 1,
+ answers: [
+    {
+        "text": "Мотылек",
+        "is_valid": true
+    },
+    {
+        "text": "Таракан",
+        "is_valid": false
+    },
+    {
+        "text": "Муха",
+        "is_valid": false
+    },
+    {
+        "text": "Японский хрущик",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 2,
+"question": "Из каких плодов можно получить копру?",
+    "level": 1,
+ answers: [
+    {
+        "text": "Ананас",
+        "is_valid": false
+    },
+    {
+        "text": "Вишня",
+        "is_valid": false
+    },
+    {
+        "text": "Кокос",
+        "is_valid": true
+    },
+    {
+        "text": "Абрикос",
+        "is_valid": false
+    }
+    ]
+    }
+    ,
+{"id": 3,
+"question": "Под каким названием известна единица с последующими ста нулями?",
+ "level": 2,
+ answers: [
+    {
+        "text": "Гугол",
+        "is_valid": true
+    },
+    {
+        "text": "Мегатрон",
+        "is_valid": false
+    },
+    {
+        "text": "Гигабит",
+        "is_valid": false
+    },
+    {
+        "text": "Наномоль",
+        "is_valid": false
+    }
+    ]
+    },
+{"id": 4,
+"question": "Какой химический элемент составляет более половины массы тела человека?",
+ "level": 2,
+ answers: [
+    {
+        "text": "Углерод",
+        "is_valid": false
+    },
+    {
+        "text": "Кальций",
+        "is_valid": false
+    },
+    {
+        "text": "Кислород",
+        "is_valid": true
+    },
+    {
+        "text": "Железо",
+        "is_valid": false
+    }
+    ]
+    },
+{"id": 5,
+"question": "Какую часть тела также называют «атлант»?",
+ "level": 3,
+ answers: [
+    {
+        "text": "Головной мозг",
+        "is_valid": false
+    },
+    {
+        "text": "Шестая пара ребер",
+        "is_valid": false
+    },
+    {
+        "text": "Шейный позвонок",
+        "is_valid": true
+    },
+    {
+        "text": "Часть плеча",
+        "is_valid": false
+    }
+    ]
+},
+{"id": 6,
+"question": "Сколько кубиков в кубике Рубика",
+ "level": 4,
+ answers: [
+    {
+        "text": "22",
+        "is_valid": false
+    },
+    {
+        "text": "24",
+        "is_valid": false
+    },
+    {
+        "text": "26",
+        "is_valid": true
+    },
+    {
+        "text": "28",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 7,
+"question": "Что изобразил Юджин Сернан, последний на данный момент побывавший на Луне человек, на ее поверхности?",
+ "level": 5,
+ answers: [
+    {
+        "text": "Символ мира",
+        "is_valid": false
+    },
+    {
+        "text": "Инициалы дочери",
+        "is_valid": true
+    },
+    {
+        "text": "Боже, храни Америку",
+        "is_valid": false
+    },
+    {
+        "text": "Здесь был Юджин",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 8,
+"question": "Одним из направлений какой религиозной философии является учение дзен?",
+ "level": 6,
+ answers: [
+    {
+        "text": "Даосизм",
+        "is_valid": false
+    },
+    {
+        "text": "Индуизм",
+        "is_valid": false
+    },
+    {
+        "text": "Иудаизм",
+        "is_valid": false
+    },
+    {
+        "text": "Буддизм",
+        "is_valid": true
+    }
+ ]
+},
+{"id": 9,
+"question": "Сколько морей омывают Балканский полуостров?",
+ "level": 7,
+ answers: [
+    {
+        "text": "3",
+        "is_valid": false
+    },
+    {
+        "text": "4",
+        "is_valid": false
+    },
+    {
+        "text": "5",
+        "is_valid": false
+    },
+    {
+        "text": "6",
+        "is_valid": true
+    }
+ ]
+},
+{"id": 10,
+"question": "Какая единица измерения названа в честь итальянского дворянина?",
+ "level": 8,
+ answers: [
+    {
+        "text": "Паскаль",
+        "is_valid": false
+    },
+    {
+        "text": "Ом",
+        "is_valid": false
+    },
+    {
+        "text": "Вольт",
+        "is_valid": true
+    },
+    {
+        "text": "Герц",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 11,
+"question": "Что дало название джинсам?",
+ "level": 9,
+ answers: [
+    {
+        "text": "Наименование места",
+        "is_valid": true
+    },
+    {
+        "text": "Фамилия человека",
+        "is_valid": false
+    },
+    {
+        "text": "Название растения",
+        "is_valid": false
+    },
+    {
+        "text": "Название компании",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 12,
+"question": "Кто из перечисленных был пажом во времена Екатерины II?",
+ "level": 10,
+ answers: [
+    {
+        "text": "Д. И. Фонвизин",
+        "is_valid": false
+    },
+    {
+        "text": " Г. Р. Державин",
+        "is_valid": false
+    },
+    {
+        "text": "А. Н. Радищев",
+        "is_valid": true
+    },
+    {
+        "text": "Н. М. Карамзин",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 13,
+"question": "Какую страну не пересекает экватор?",
+ "level": 11,
+  answers: [
+    {
+        "text": "Кения",
+        "is_valid": false
+    },
+    {
+        "text": "Панама",
+        "is_valid": true
+    },
+    {
+        "text": "Бразилия",
+        "is_valid": false
+    },
+    {
+        "text": "Индонезия",
+        "is_valid": true
+    }
+ ]
+},
+{"id": 14,
+"question": "Что означает гавайское слово «вики», которое дало название интернет-энциклопедии «Википедия»?",
+ "level": 12,
+ answers: [
+    {
+        "text": "Простой",
+        "is_valid": false
+    },
+    {
+        "text": "Изученный",
+        "is_valid": false
+    },
+    {
+        "text": "Маленький",
+        "is_valid": false
+    },
+    {
+        "text": "Быстрый",
+        "is_valid": true
+    }
+ ]
+},
+{"id": 15,
+"question": "Что изображено на заднем плане картины Леонардо да Винчи «Мона Лиза»?",
+ "level": 13,
+ answers: [
+    {
+        "text": "Драпировка",
+        "is_valid": false
+    },
+    {
+        "text": "Город",
+        "is_valid": false
+    },
+    {
+        "text": "Стадо овец",
+        "is_valid": false
+    },
+    {
+        "text": "Пейзаж",
+        "is_valid": true
+    }
+ ]
+},
+{"id": 16,
+"question": "Какого цвета крайнее правое кольцо в олимпийской символике?",
+ "level": 14,
+ answers: [
+    {
+        "text": "Красное",
+        "is_valid": true
+    },
+    {
+        "text": "Синее",
+        "is_valid": false
+    },
+    {
+        "text": "Желтое",
+        "is_valid": false
+    },
+    {
+        "text": "Зеленое",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 17,
+"question": "Чем в давние времена бил холоп, обращаясь к царю?",
+ "level": 15
+ answers: [
+    {
+        "text": "плечом",
+        "is_valid": false
+    },
+    {
+        "text": "челом",
+        "is_valid": true
+    },
+    {
+        "text": "веслом",
+        "is_valid": false
+    },
+    {
+        "text": "кнутом",
+        "is_valid": false
+    }
+ ]
+},
+{"id": 18,
+"question": "Чем способен «стрелять» хамелеон?",
+ "level": 1
+ answers: [
+    {
+        "text": "хвостом",
+        "is_valid": false
+    },
+    {
+        "text": "глазами",
+        "is_valid": false
+    },
+    {
+        "text": "слюной",
+        "is_valid": false
+    },
+    {
+        "text": "языком",
+        "is_valid": true
+    }
+ ]
+},
+]
+
+}
