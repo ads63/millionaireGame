@@ -2,21 +2,25 @@
 //  Question.swift
 //  millionaireGame
 //
-//  Created by Алексей Шинкарев on 15.12.2021.
+//  Created by Алексей Шинкарев on 01.03.2022.
 //
 
 import Foundation
 
 struct Question {
-    let id: Int
-    var answers: [Answer]
+    var answers: [Int: String]
+    let validAnswerId: Int
     let questionText: String
-    let level: Int
+    let weight: Int
 
-    init(id: Int, answers: [Answer], question: String, level: Int) {
-        self.id = id
+    init(question: String,
+         answers: [Int: String],
+         validAnswer: Int,
+         weight: Int)
+    {
+        self.validAnswerId = validAnswer
         self.answers = answers
         self.questionText = question
-        self.level = level
+        self.weight = weight
     }
 }

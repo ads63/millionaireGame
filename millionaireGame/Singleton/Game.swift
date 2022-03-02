@@ -2,25 +2,28 @@
 //  Game.swift
 //  millionaireGame
 //
-//  Created by Алексей Шинкарев on 16.12.2021.
+//  Created by Алексей Шинкарев on 01.03.2022.
 //
 
 import Foundation
-final class Game: Codable {
+
+final class Game {
     static let instance = Game()
     var session: GameSession?
-    var results = [GameSessionResults]()
-    enum CodingKeys: String, CodingKey {
-        case results
-    }
+    var results = [GameSessionResult]()
 
     func calcResults() {
-        guard let gameSession = Game.instance.session else { return }
-
-        let result = GameSessionResults(money: gameSession.getSum(),
-                                        answered: gameSession.getAnsweredCount(),
-                                        percent: gameSession.getAnsweredCount()
-                                            * 100 / gameSession.getQuestionsCount())
-        results.append(result)
+        guard let gameSession = self.session else { return }
+        let count = gameSession.getAnsweredCount()
+        let totalCount = gameSession.getTotalCount()
+        self.results.append(
+            GameSessionResult(
+                money: gameSession.getSum(),
+                answeredCount: count,
+                answeredPercent: totalCount == 0 ? 0 : (count * 100) / totalCount
+            )
+        )
+        try? CareTaker<[GameSessionResult]>().save(data: self.results)
+        self.session = nil
     }
 }

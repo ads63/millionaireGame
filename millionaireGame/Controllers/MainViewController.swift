@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  millionaireGame
 //
-//  Created by Алексей Шинкарев on 16.12.2021.
+//  Created by Алексей Шинкарев on 01.03.2022.
 //
 
 import UIKit
@@ -18,7 +18,8 @@ class MainViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        try? Game.instance.results = CareTaker().load()
+        try? Game.instance.results = CareTaker<[GameSessionResult]>().load()
+            ?? [GameSessionResult]()
         resultsLabel.text = getResults()
         super.viewDidLoad()
 
@@ -32,11 +33,11 @@ class MainViewController: UIViewController {
         if segue.identifier == "playSegue" {
             guard let destinationVC = segue.destination
                 as? GameViewController else { return }
-            destinationVC.delegate = self
             if Game.instance.session == nil {
-                Game.instance.session = GameSession()
+                let session = GameSession()
+                Game.instance.session = session
+                destinationVC.delegate = session
             }
-            destinationVC.sessionDelegate = Game.instance.session
         }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -45,15 +46,9 @@ class MainViewController: UIViewController {
     private func getResults() -> String {
         return Game.instance.results.isEmpty ?
             "Статистика игр отсутствует" :
-            Game.instance.results.map { $0.toString() }
-            .reversed().joined(separator: "\n")
-    }
-}
-
-extension MainViewController: GameViewControllerDelegate {
-    func finishGame(sum: Int) {
-        Game.instance.calcResults()
-        try? CareTaker().save(gameResults: Game.instance.results)
-        Game.instance.session = nil
+            Game.instance.results
+            .map { $0.description() }
+            .reversed()
+            .joined(separator: "\n")
     }
 }

@@ -1,26 +1,14 @@
 //
-//  GameSessionDeledate.swift
+//  GameSessionDelegate.swift
 //  millionaireGame
 //
-//  Created by Алексей Шинкарев on 16.12.2021.
+//  Created by Алексей Шинкарев on 01.03.2022.
 //
 
 import Foundation
-
-protocol GameSessionDelegate: AnyObject {
-    func hideWrongAnswers(question: Question)
-    func setNextQuestion(question: Question?,
-                         answer: Int,
-                         sum: Int,
-                         savedSum: Int,
-                         isCallEnabled: Bool,
-                         isAudienceEnabled: Bool,
-                         isHide1Enabled: Bool,
-                         isHide2Enabled: Bool)
-    func gameOver(sum: Int)
-    func applyHint(hint: Hint)
-}
-
-enum Hint {
-    case call, audience, fifty1, fifty2
+protocol GameSessionDelegate {
+    func addAnsweredQuestion(weight: Int?)
+    func addTotalQuestions(count: Int)
+    func useHint(hintType: HintType)
+    func getSum() -> Int
 }
