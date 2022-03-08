@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" rowHeight="234" id="KGk-i7-Jjw" customClass="QuestionTableViewCell" customModule="millionaireGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField toolTip="введите текст вопроса" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="вопрос" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="PQ6-La-Fnm">
+                        <rect key="frame" x="5" y="5" width="373" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="vNJ-zr-dOH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField toolTip="введите ответ 1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ответ 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-UM-SnQ">
+                        <rect key="frame" x="5" y="43" width="373" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ha4-ff-Wx2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField toolTip="введите ответ 2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ответ 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2a-a1-0aJ">
+                        <rect key="frame" x="5" y="81" width="373" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Fjy-6e-izI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField toolTip="введите ответ 3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ответ 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-DT-7Yb">
+                        <rect key="frame" x="5" y="119" width="373" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="jmA-OR-8gR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField toolTip="введите ответ 4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ответ 4" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Tdi-aj-rht">
+                        <rect key="frame" x="5" y="157" width="373" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ezc-F1-LQC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField toolTip="введите ответ 4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="цена" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oVX-LW-VOG">
+                        <rect key="frame" x="5" y="195" width="108.5" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3ho-v2-h1P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Верный ответ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLh-7x-bQU">
+                        <rect key="frame" x="118.5" y="195" width="93" height="30"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ARH-ha-Xes"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <segmentedControl toolTip="верный ответ" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RJ8-F4-V4X">
+                        <rect key="frame" x="216.5" y="195" width="161.5" height="31"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <segments>
+                            <segment title="1"/>
+                            <segment title="2"/>
+                            <segment title="3"/>
+                            <segment title="4"/>
+                        </segments>
+                        <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <action selector="validAnswerControl:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Aiw-Pi-LRs"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <color key="backgroundColor" systemColor="linkColor"/>
+                <color key="tintColor" systemColor="linkColor"/>
+                <constraints>
+                    <constraint firstItem="oVX-LW-VOG" firstAttribute="top" secondItem="Tdi-aj-rht" secondAttribute="bottom" constant="8" symbolic="YES" id="4Eg-K9-eur"/>
+                    <constraint firstItem="u2a-a1-0aJ" firstAttribute="trailing" secondItem="xIP-UM-SnQ" secondAttribute="trailing" id="6Oh-DU-Xvi"/>
+                    <constraint firstItem="u2a-a1-0aJ" firstAttribute="top" secondItem="xIP-UM-SnQ" secondAttribute="bottom" constant="8" symbolic="YES" id="7gE-sp-BNQ"/>
+                    <constraint firstItem="u2a-a1-0aJ" firstAttribute="leading" secondItem="xIP-UM-SnQ" secondAttribute="leading" id="7nX-M1-ifd"/>
+                    <constraint firstItem="JLh-7x-bQU" firstAttribute="height" secondItem="oVX-LW-VOG" secondAttribute="height" id="7ze-oW-ENr"/>
+                    <constraint firstItem="RJ8-F4-V4X" firstAttribute="leading" secondItem="JLh-7x-bQU" secondAttribute="trailing" constant="5" id="EcQ-Ca-lfg"/>
+                    <constraint firstItem="oVX-LW-VOG" firstAttribute="leading" secondItem="Tdi-aj-rht" secondAttribute="leading" id="Fu4-bj-OOk"/>
+                    <constraint firstItem="xIP-UM-SnQ" firstAttribute="trailing" secondItem="PQ6-La-Fnm" secondAttribute="trailing" id="Fyl-Xv-Fvu"/>
+                    <constraint firstItem="JLh-7x-bQU" firstAttribute="centerY" secondItem="RJ8-F4-V4X" secondAttribute="centerY" id="GJF-kQ-EtS"/>
+                    <constraint firstItem="Tdi-aj-rht" firstAttribute="leading" secondItem="0fG-DT-7Yb" secondAttribute="leading" id="GnB-SR-KSH"/>
+                    <constraint firstItem="JLh-7x-bQU" firstAttribute="top" secondItem="oVX-LW-VOG" secondAttribute="top" id="Krz-IO-6Lr"/>
+                    <constraint firstItem="JLh-7x-bQU" firstAttribute="leading" secondItem="oVX-LW-VOG" secondAttribute="trailing" constant="5" id="OKz-1m-Bma"/>
+                    <constraint firstItem="Tdi-aj-rht" firstAttribute="trailing" secondItem="0fG-DT-7Yb" secondAttribute="trailing" id="XKo-xA-pUv"/>
+                    <constraint firstItem="0fG-DT-7Yb" firstAttribute="trailing" secondItem="u2a-a1-0aJ" secondAttribute="trailing" id="XkQ-Tt-lLJ"/>
+                    <constraint firstItem="RJ8-F4-V4X" firstAttribute="top" secondItem="Tdi-aj-rht" secondAttribute="bottom" constant="8" symbolic="YES" id="YT2-91-rPy"/>
+                    <constraint firstItem="RJ8-F4-V4X" firstAttribute="trailing" secondItem="Tdi-aj-rht" secondAttribute="trailing" id="aey-Cl-Cs5"/>
+                    <constraint firstItem="Tdi-aj-rht" firstAttribute="top" secondItem="0fG-DT-7Yb" secondAttribute="bottom" constant="8" symbolic="YES" id="bss-uV-x3o"/>
+                    <constraint firstItem="0fG-DT-7Yb" firstAttribute="leading" secondItem="u2a-a1-0aJ" secondAttribute="leading" id="oqv-Ip-bVC"/>
+                    <constraint firstItem="xIP-UM-SnQ" firstAttribute="top" secondItem="PQ6-La-Fnm" secondAttribute="bottom" constant="8" symbolic="YES" id="pfH-3f-Qwn"/>
+                    <constraint firstItem="0fG-DT-7Yb" firstAttribute="top" secondItem="u2a-a1-0aJ" secondAttribute="bottom" constant="8" symbolic="YES" id="rmD-PR-2nI"/>
+                    <constraint firstItem="xIP-UM-SnQ" firstAttribute="leading" secondItem="PQ6-La-Fnm" secondAttribute="leading" id="sMa-dv-awM"/>
+                    <constraint firstItem="oVX-LW-VOG" firstAttribute="trailing" secondItem="Tdi-aj-rht" secondAttribute="trailing" multiplier="0.3" id="xlV-Q4-pMs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="PQ6-La-Fnm" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="5" id="4on-dQ-F9y"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="PQ6-La-Fnm" secondAttribute="trailing" constant="5" id="cEV-jU-aPD"/>
+                <constraint firstItem="PQ6-La-Fnm" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="5" id="y2v-Ws-7JF"/>
+            </constraints>
+            <connections>
+                <outlet property="answer1TextField" destination="xIP-UM-SnQ" id="xd5-WA-YWN"/>
+                <outlet property="answer2TextField" destination="u2a-a1-0aJ" id="4Zz-ZE-A9D"/>
+                <outlet property="answer3TextField" destination="0fG-DT-7Yb" id="KUq-61-5UU"/>
+                <outlet property="answer4TextField" destination="Tdi-aj-rht" id="rL1-Jn-yNe"/>
+                <outlet property="priceTextField" destination="oVX-LW-VOG" id="Av5-4w-S8e"/>
+                <outlet property="questionTextField" destination="PQ6-La-Fnm" id="Ds3-UV-afY"/>
+                <outlet property="validAnswerSegmentedControl" destination="RJ8-F4-V4X" id="E2a-WB-nrj"/>
+            </connections>
+            <point key="canvasLocation" x="86.231884057971016" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
