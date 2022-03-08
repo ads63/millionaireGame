@@ -12,6 +12,10 @@ class MainViewController: UIViewController {
         resultsLabel.text = getResults()
     }
 
+    @IBAction func settingsButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "settingsSegue", sender: sender)
+    }
+
     @IBOutlet var resultsLabel: UILabel!
     @IBAction func playButton(_ sender: UIButton) {
         performSegue(withIdentifier: "playSegue", sender: sender)

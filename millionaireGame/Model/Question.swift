@@ -7,20 +7,28 @@
 
 import Foundation
 
-struct Question {
-    var answers: [Int: String]
-    let validAnswerId: Int
-    let questionText: String
-    let weight: Int
+struct Question: Codable {
+    var answers = [Int: String]()
+    var validAnswerId: Int = 1
+    var hiddenAnswers = [Int]()
+    var questionText: String = ""
+    var weight: Int = 0
 
-    init(question: String,
-         answers: [Int: String],
-         validAnswer: Int,
-         weight: Int)
+    init(question: String = "",
+         answers: [Int: String] = [Int: String](),
+         validAnswer: Int = 1,
+         weight: Int = 0)
     {
         self.validAnswerId = validAnswer
         self.answers = answers
         self.questionText = question
         self.weight = weight
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case answers
+        case validAnswerId
+        case questionText
+        case weight
     }
 }

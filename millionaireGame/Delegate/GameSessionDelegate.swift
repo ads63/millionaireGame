@@ -7,8 +7,8 @@
 
 import Foundation
 protocol GameSessionDelegate {
+    var hintUsageFacade: HintUsageFacade { get }
     func addAnsweredQuestion(weight: Int?)
     func addTotalQuestions(count: Int)
-    func useHint(hintType: HintType)
     func getSum() -> Int
 }
