@@ -50,6 +50,8 @@ final class HintUsageFacade {
                     results.append(contentsOf: hintResult)
                 }
                 hintCounters[hint.hintType] =  count - 1
+            } else {
+                break
             }
         }
         return results
